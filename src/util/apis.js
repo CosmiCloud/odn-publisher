@@ -25,14 +25,14 @@ module.exports = [
       getData: () => getRandomArcticInfrastructure(),
     },
   ],
-  ...(process.env.GOOGLE_API_KEY
-    ? [
-        {
-          name: "google",
-          getData: () => getRandomGoogle(),
-        },
-      ]
-    : []),
+  // ...(process.env.GOOGLE_API_KEY
+  //   ? [
+  //       {
+  //         name: "google",
+  //         getData: () => getRandomGoogle(),
+  //       },
+  //     ]
+  //   : []),
   ...(process.env.DPLA_KEY
     ? [
         {
